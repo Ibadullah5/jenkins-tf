@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker {
+        dockerContainer {
             image 'hashicorp/terraform:1.6.6'
             args '-u root' // optional: allows sudo or file changes if needed
         }
